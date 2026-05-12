@@ -1,0 +1,29 @@
+{
+  "name": "BioLinkProtector",
+  "description": "Telegram Bio Link Protector Bot",
+  "keywords": ["telegram", "bot", "moderation"],
+  "repository": "https://github.com/Yewsdhi/BioLinkProtector",
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API HASH",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB URL",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
